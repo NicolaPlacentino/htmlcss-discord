@@ -85,8 +85,12 @@ header{
 
 li{
     list-style-type: none;
-    display: inline; 
+     
     padding: 0 var(--1u);
+}
+
+#nav-bar li{
+    display: inline;
 }
 
 li a{
@@ -232,16 +236,25 @@ footer h2{
     height: 18px;
 }
 
+#icons.flex{
+    margin-top: var(--2u);
+    width: 40%;
+    justify-content: space-between;
+}
+
 .footer-element.big{  
     flex-grow: 1;
-    background-color: teal;
-    border: 2px dashed black;
     display: flex;
 }
 
 .footer-sub-element{
     flex-grow: 1;
-    border: 2px dashed white;
+    line-height: 2em;
+}
+
+.footer-sub-element ul li:first-child{
+    color: rgb(100,138,232);
+    font-weight: 600;
 }
 
 .footer-bar{
