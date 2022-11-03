@@ -13,6 +13,7 @@
     --2u: 20px;
     --3u: 30px;
     --4u: 40px;
+    --8u: 80px;
 }
 
 body{
@@ -44,7 +45,7 @@ i{
 }
 
 .gray-bg{
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
 }
 
 /* header */
@@ -114,12 +115,10 @@ nav button{
 #jumbotron article{
     min-height:350px;
     max-width: 800px;  
-}
-
-#jumbotron article{
     text-align: center;
     line-height: 2rem;
     font-size: 21px;
+    margin-top: var(--3u);
 }
 
 article h1{
@@ -144,22 +143,29 @@ button.black{
 
 section{
     min-height: 300px;
-    padding: var(--4u);
+    padding: var(--8u);
 
 }
 
 .main-element-small{
     min-height: 400px;
-    background-color: pink;
     flex-basis:calc(100% / 3);
-    border: 2px dashed black;
+}
+
+.main-element-small h2{
+    margin: var(--2u) 0;
+    font-size: 50px;
+}
+
+.main-element-small p{
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .main-element-medium{
     min-height: 400px;
-    background-color: dodgerblue;
     flex-grow: 1;
-    border: 2px dashed black;
+    text-align: center;
 }
 
 .main-element-big{
