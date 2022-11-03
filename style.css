@@ -15,6 +15,10 @@
     --4u: 40px;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 /* utils */
 
 .container{
@@ -38,42 +42,59 @@
 /* header */
 
 header{
-    background-color: lightblue;
+    background-color: rgb(49,97,224);
 }
+
+/* navbar */
+
 
 #nav-bar{
     display: flex;
     margin: var(--1u);
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
-#nav-bar *{
-    background-color: goldenrod;
-    border: 2px dashed black;
+#nav-bar > *{
     padding: var(--1u);
 }
 
-#nav-bar div{
+#nav-bar .lateral{
     width: 25%;
 }
 
-#nav-bar nav{
+#nav-bar .lateral:last-child{
+    text-align: right;
+}
+
+#nav-bar div:not(.lateral){
     flex-grow: 1;
     text-align: center;
 }
 
-#nav-bar div:last-child{
-    text-align: right;
+li{
+    list-style-type: none;
+    display: inline;
+    color: white;
+    padding: 0 var(--1u);
 }
 
-#background-img{
+nav button{
+    border-radius: var(--2u);
+    border: none;
+    padding: var(--1u);
+}
+
+/* jumbotron */
+
+#jumbotron{
     background-color: darkblue;
     min-height: 300px;
     padding: var(--4u);
 }
 
-#background-img article{
+#jumbotron article{
     background-color: violet;
     border: 2px dashed black;
     min-height:350px;
