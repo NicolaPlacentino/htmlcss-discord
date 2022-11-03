@@ -207,22 +207,32 @@ section{
 /* footer */
 
 footer{
-    background-color:rgb(43, 43, 43);
+    background-color:rgb(35,39,42);
+    color: white;
 }
 
-.footer-element-small, .footer-element-big{
-    margin-top: var(--1u);
+footer h2{
+    color: rgb(100,138,232);
+    font-size: 30px;
+    margin-bottom: var(--2u);
+}
+
+.footer-element{
+    margin-top: var(--4u);
     margin-bottom: var(--3u);
     min-height: 400px;
 }
 
-.footer-element-small{  
+.footer-element.small{  
     flex-basis: 30%;
-    background-color: indianred;
-    border: 2px dashed black;
 }
 
-.footer-element-big{  
+.footer-element.small img{
+    vertical-align: text-bottom;
+    height: 18px;
+}
+
+.footer-element.big{  
     flex-grow: 1;
     background-color: teal;
     border: 2px dashed black;
@@ -238,18 +248,19 @@ footer{
     flex-basis: 100%;
     display: flex;
     padding: var(--2u) 0;
-    background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
-    margin-top: var(--2u);
+    margin: var(--2u) 0;
 }
 
-.footer-bar div{
-    background-color: pink;
-    border: 2px dashed black;
-    padding: 5px;
+.footer-bar button{
+    background-color: rgb(100,138,232);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
 }
 
-.container.flex:last-child{
-    border-top: 2px solid rgb(100,138,232);
+footer .container.flex:last-child{
+    border-top: 1px solid rgb(100,138,232);
 }
