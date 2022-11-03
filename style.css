@@ -75,9 +75,13 @@ header{
 
 li{
     list-style-type: none;
-    display: inline;
-    color: white;
+    display: inline; 
     padding: 0 var(--1u);
+}
+
+li a{
+    text-decoration: none;
+    color: white;
 }
 
 nav button{
