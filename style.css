@@ -1,0 +1,157 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generic */
+
+:root{
+    --1u: 10px;
+    --2u: 20px;
+    --3u: 30px;
+    --4u: 40px;
+}
+
+/* utils */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.gray-bg{
+    background-color: lightgray;
+}
+
+/* header */
+
+header{
+    background-color: lightblue;
+}
+
+#nav-bar{
+    display: flex;
+    margin: var(--1u);
+    width: 100%;
+    justify-content: space-between;
+}
+
+#nav-bar *{
+    background-color: goldenrod;
+    border: 2px dashed black;
+    padding: var(--1u);
+}
+
+#nav-bar div{
+    width: 25%;
+}
+
+#nav-bar nav{
+    flex-grow: 1;
+    text-align: center;
+}
+
+#nav-bar div:last-child{
+    text-align: right;
+}
+
+#background-img{
+    background-color: darkblue;
+    min-height: 300px;
+    padding: var(--4u);
+}
+
+#background-img article{
+    background-color: violet;
+    border: 2px dashed black;
+    min-height:350px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* main */
+
+section{
+    min-height: 300px;
+    padding: var(--4u);
+
+}
+
+.main-element-small{
+    min-height: 400px;
+    background-color: pink;
+    flex-basis:calc(100% / 3);
+    border: 2px dashed black;
+}
+
+.main-element-medium{
+    min-height: 400px;
+    background-color: dodgerblue;
+    flex-grow: 1;
+    border: 2px dashed black;
+}
+
+.main-element-big{
+    min-height: 800px;
+    background-color: green;
+    flex-grow: 1;
+    border: 2px dashed black;
+}
+
+/* footer */
+
+footer{
+    background-color:rgb(43, 43, 43);
+}
+
+.footer-element-small, .footer-element-big{
+    margin-top: var(--1u);
+    margin-bottom: var(--3u);
+    min-height: 400px;
+}
+
+.footer-element-small{  
+    flex-basis: 30%;
+    background-color: indianred;
+    border: 2px dashed black;
+}
+
+.footer-element-big{  
+    flex-grow: 1;
+    background-color: teal;
+    border: 2px dashed black;
+    display: flex;
+}
+
+.footer-sub-element{
+    flex-grow: 1;
+    border: 2px dashed white;
+}
+
+.footer-bar{
+    flex-basis: 100%;
+    display: flex;
+    padding: var(--2u) 0;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--2u);
+}
+
+.footer-bar div{
+    background-color: pink;
+    border: 2px dashed black;
+    padding: 5px;
+}
